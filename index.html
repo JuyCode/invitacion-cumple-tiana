@@ -29,15 +29,15 @@
         body::before {
             content: '';
             position: fixed;
-            top: -60px;
+            top: 0;
             left: 0;
             width: 100%;
-            height: calc(100% + 120px);
+            height: 400px;
             background-image: url('descarga.jpg');
-            background-repeat: repeat;
+            background-repeat: repeat-x;
             background-size: 130px;
             background-position: center top;
-            opacity: 0.09;
+            opacity: 0.12;
             filter: grayscale(5%);
             z-index: 0;
             pointer-events: none;
@@ -352,6 +352,43 @@
                         <p class="info-value">¡Llevar traje de baño!</p>
                     </div>
                 </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <p class="info-label">Ubicación</p>
+                    </div>
+                </div>
+            </div>
+
+            <div style="padding: 0 35px 25px;">
+                <div style="width: 100%; border-radius: 18px; overflow: hidden; border: 1.5px solid #f3e8ff; box-shadow: 0 8px 20px rgba(147, 51, 234, 0.06);">
+                    <iframe src="https://maps.google.com/maps?q=location&t=&z=15&ie=UTF8&iwloc=&output=embed" 
+                            width="100%" 
+                            height="200" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <div style="text-align: center; padding: 10px; background: linear-gradient(90deg, #fff 0%, #fcfaff 100%);">
+                        <a href="https://maps.app.goo.gl/vNG1jBDsGF8NcHUR9" target="_blank" style="color: #9333ea; text-decoration: none; font-weight: 600; font-size: 0.95em;">
+                            <i class="bi bi-box-arrow-up-right"></i> Abrir en Google Maps
+                        </a>
+                    </div>
+                </div>
+
+                <div class="info-card swim-card">
+                    <div class="info-icon">
+                        <i class="bi bi-water"></i>
+                    </div>
+                    <div class="info-content">
+                        <p class="info-label">Importante</p>
+                        <p class="info-value">¡Llevar traje de baño!</p>
+                    </div>
+                </div>
             </div>
 
             <div class="rsvp-section">
@@ -362,12 +399,6 @@
                     <i class="bi bi-heart-fill"></i>
                     CONFIRMO ASISTENCIA
                 </a>
-                <div style="margin-top: 25px;">
-                    <a href="https://maps.app.goo.gl/vNG1jBDsGF8NcHUR9" target="_blank" style="display: inline-flex; align-items: center; gap: 8px; color: #9333ea; text-decoration: none; font-weight: 600; font-size: 1em;">
-                        <i class="bi bi-geo-alt-fill"></i>
-                        Ver ubicación
-                    </a>
-                </div>
             </div>
 
             <div class="footer-strip"></div>
