@@ -29,13 +29,14 @@
         body::before {
             content: '';
             position: fixed;
-            top: 0;
+            top: -30px;
             left: 0;
             width: 100%;
-            height: 100%;
+            height: calc(100% + 60px);
             background-image: url('descarga.jpg');
             background-repeat: repeat;
             background-size: 110px;
+            background-position: center top;
             opacity: 0.09;
             filter: grayscale(5%);
             z-index: 0;
@@ -308,8 +309,8 @@
             <div class="header-strip"></div>
 
             <div class="header">
-                <p class="pre-title">Te invito a mi</p>
-                <h1 class="main-title">Cumpleaños</h1>
+                <p class="pre-title">Te invito a festejar mis 12 años</p>
+                <h1 class="main-title"></h1>
                 <p class="name-elegant">Tiana</p>
             </div>
 
@@ -339,6 +340,16 @@
                     <div class="info-content">
                         <p class="info-label">Horario</p>
                         <p class="info-value">De 12:00 hs a 20:30 hs</p>
+                    </div>
+                </div>
+
+                <div class="info-card">
+                    <div class="info-icon">
+                        <i class="bi bi-geo-alt"></i>
+                    </div>
+                    <div class="info-content">
+                        <p class="info-label">Ubicación</p>
+                        <p class="info-value"><a href="https://maps.app.goo.gl/vNG1jBDsGF8NcHUR9" target="_blank" style="color: #4b5563; text-decoration: none;">Ver ubicación</a></p>
                     </div>
                 </div>
 
